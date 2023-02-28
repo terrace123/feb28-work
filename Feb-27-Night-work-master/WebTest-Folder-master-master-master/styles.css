@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Designer';
+    font-style: normal;
+    src: url('./fonts/Designer.otf');
+}
+
+@font-face {
+    font-family: 'Instruction';
+    font-style: normal;
+    src: url('./fonts/Instruction.otf');
+}
+
+
+h1, p {
+    color: white;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 80px;
+    font-family: 'Instruction';
+    text-shadow: 5px 5px 15px black;
+}
+
+p {
+    font-size: 20px;
+    -webkit-text-stroke: .5px black;
+}
+
+body {
+    background-image: url(https://media.giphy.com/media/Eo6S6fbgPmRPi/giphy.gif);
+
+    background-blend-mode: darken;
+    background-repeat: repeat;
+    width: 100%;
+}
+
+.info, .info2 {
+    font-family: 'Instruction';
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.info {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.info2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.maker {
+    padding-top: 35px;
+    font-family: Arial;
+    text-align: right;
+    font-size: 15px;
+    color: white;
+}
+
+a {
+    color: white;
+    justify-items: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(63, 238, 63);
+}
+
+
+#logout:hover {
+    color: red;
+}
+a:active {
+    color: blue;
+}
+
+.f1 {
+    margin-top: 350px;
+    border: 0;
+    display: block;
+    justify-content: center;
+}
+
+.greenbar {
+    background-color: green;
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.bar {
+    background-color: grey;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+.bar2 {
+    background-color: grey;
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+
+#navbarSelector {
+    width: 100%;
+    background-color: grey;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-top: -10px;
+    margin-bottom: 50px; 
+    z-index: 9999
+}
+
+.navbar {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Instruction';
+    flex-wrap: nowrap;
+    transform: all 0.5s ease;
+    z-index: 9999
+}
+
+.navbar:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.infocontainer {
+    border-radius: 8%;
+    box-shadow: 5px 5px black;
+    border: 5px solid white;
+    display: block;
+    height: 400px;
+    width: 450px;
+    justify-content: center;
+    margin-right: 35px;
+    margin-bottom: 15px;
+}
+
+.infocontainer2 {
+    border-radius: 8%;
+    box-shadow: 5px 5px black;
+    border: 5px solid white;
+    display: block;
+    height: 400px;
+    width: 450px;
+    justify-content: center;
+    margin-right: 35px;
+    margin-bottom: 150px;
+}
+
+.accinfohead {
+    display: flex;
+    border: none;
+    flex-direction: row;
+    color: white;
+    font-family: 'Designer';
+    font-size: 25px;
+    justify-content: center;
+    -webkit-text-stroke: .5px black;
+}
+
+.avatar {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:100px;
+    height:100px;
+    border: 2px solid white;
+}
+
+#avatarUser {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Instruction';
+}
+@media screen and (max-width: 481px) {
+
+}
+
+.progress {
+    text-align: center;
+    font-family: 'Instruction';
+    padding-bottom: 150px;
+}
+
+#div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    height:500px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.1);border: 2px white;
+}
+
+@keyframes fade {
+	from { opacity: 0; background-color: rgba(0, 0, 0, 0.5); }
+	to { opacity: 1; background-color: rgba(0, 0, 0, 0.8)}
+}
+
+head, img {
+    opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	animation-name: fade;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+
+body {
+	position: relative;
+	z-index: 2;
+	opacity: 0;
+	animation-name: fade;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+
+
+
+
